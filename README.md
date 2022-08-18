@@ -12,7 +12,7 @@ https://betterprogramming.pub/from-rust-to-swift-df9bde59b7cd
     echo "x86_64-apple-ios-macabi and aarch64-apple-ios-macabi require the nightly toolchain"
     rustup toolchain install nightly
 
-    # to allow for abi builds from the nightly toolchain for xargo...
+    ### to allow for abi builds from the nightly toolchain for xargo...
     rustup component add rust-src
     echo "▸ Install xargo"
     cargo install xargo
