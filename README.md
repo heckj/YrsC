@@ -120,20 +120,20 @@ Generate an XCFramework:
         -headers ./include \
         -library ./y-crdt/target/apple-darwin/release/libyrs.a \
         -headers ./include \
-        -output ./xcframework/YCRDTC.xcframework
+        -output ./xcframework/YrsC.xcframework
 
-    echo "▸ Compress YCRDTC.xcframework"
-    ditto -c -k --sequesterRsrc --keepParent ./xcframework/YCRDTC.xcframework ./YCRDTC.xcframework.zip
+    echo "▸ Compress YrsC.xcframework"
+    ditto -c -k --sequesterRsrc --keepParent ./xcframework/YrsC.xcframework ./YrsC.xcframework.zip
 
-    echo "▸ Compute YCRDTC.xcframework checksum"
-    swift package compute-checksum ./YCRDTC.xcframework.zip
+    echo "▸ Compute YrsC.xcframework checksum"
+    swift package compute-checksum ./YrsC.xcframework.zip
 
-`9cc323bcab678ec50b5391cce4fd3dc2a750e79d720e7fd5a09b1e892b7592c7`
+`6ce0f000c6f177589a2a889b1db61e90ae194f1d528fdb8bd0389034d1236a6d`
 
 - update Package.swift with the checksum and updated tag
 - commit the changes
-- Create a new release through Github's web interface: https://github.com/heckj/Y-CRDT-C/releases/new
-  - drag `YCRDTC.xcframework.zip` into the binaries
+- Create a new release through Github's web interface: https://github.com/heckj/YrsC/releases/new
+  - drag `YrsC.xcframework.zip` into the binaries
   - update the tag to the next iteration
   - add any relevant notes
   - publish

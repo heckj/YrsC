@@ -3,21 +3,21 @@
 import PackageDescription
 
 let package = Package(
-    name: "YCRDTC",
+    name: "YrsC",
     platforms: [
         .iOS(.v12),
         .macOS(.v10_10),
     ],
     products: [
-        .library(name: "YCRDTC", targets: ["YCRDTC"])
+        .library(name: "YrsC", targets: ["YrsC"])
     ],
     dependencies: [
     ],
     targets: [
         .binaryTarget(
-            name: "YCRDTC",
-            url: "https://github.com/heckj/Y-CRDT-C/releases/download/0.11.5/YCRDTC.xcframework.zip",
-            checksum: "9cc323bcab678ec50b5391cce4fd3dc2a750e79d720e7fd5a09b1e892b7592c7"
+            name: "YrsC",
+            url: "https://github.com/heckj/YrsC/releases/download/0.11.2-alpha1/YrsC.xcframework.zip",
+            checksum: "6ce0f000c6f177589a2a889b1db61e90ae194f1d528fdb8bd0389034d1236a6d"
         )
     ]
 )
