@@ -17,7 +17,7 @@ let package = Package(
         .binaryTarget(
             name: "YCRDTC",
             url: "https://github.com/heckj/Y-CRDT-C/releases/download/0.11.5/YCRDTC.xcframework.zip",
-            checksum: "27694825d227b466cecc0b54aead8d90529f722b0938dd6ac176670c6a1606a3"
+            checksum: "9cc323bcab678ec50b5391cce4fd3dc2a750e79d720e7fd5a09b1e892b7592c7"
         )
     ]
 )
