@@ -1,0 +1,4 @@
+module automergeC {
+    header "libyrs.h"
+    export *
+}
