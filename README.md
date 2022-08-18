@@ -25,10 +25,11 @@ https://betterprogramming.pub/from-rust-to-swift-df9bde59b7cd
     rustup target add aarch64-apple-ios-macabi # MacCatalyst
     rustup target add x86_64-apple-ios-macabi # MacCatalyst
 
-    cargo update
-
     git clone https://github.com/y-crdt/y-crdt.git
     pushd y-crdt
+    git checkout v0.11.2
+    rm -rf target
+    #cargo update
 
     echo "▸ Build x86_64-apple-ios"
     cargo build --target x86_64-apple-ios --package yffi --release
@@ -119,20 +120,20 @@ Generate an XCFramework:
         -headers ./include \
         -library ./y-crdt/target/apple-darwin/release/libyrs.a \
         -headers ./include \
-        -output ./xcframework/Y-CRDT-C.xcframework
+        -output ./xcframework/YCRDTC.xcframework
 
-    echo "▸ Compress Y-CRDT-C.xcframework"
-    ditto -c -k --sequesterRsrc --keepParent ./xcframework/Y-CRDT-C.xcframework ./Y-CRDT-C.xcframework.zip
+    echo "▸ Compress YCRDTC.xcframework"
+    ditto -c -k --sequesterRsrc --keepParent ./xcframework/YCRDTC.xcframework ./YCRDTC.xcframework.zip
 
-    echo "▸ Compute Y-CRDT-C.xcframework checksum"
-    swift package compute-checksum ./Y-CRDT-C.xcframework.zip
+    echo "▸ Compute YCRDTC.xcframework checksum"
+    swift package compute-checksum ./YCRDTC.xcframework.zip
 
-`27694825d227b466cecc0b54aead8d90529f722b0938dd6ac176670c6a1606a3`
+`9cc323bcab678ec50b5391cce4fd3dc2a750e79d720e7fd5a09b1e892b7592c7`
 
 - update Package.swift with the checksum and updated tag
 - commit the changes
 - Create a new release through Github's web interface: https://github.com/heckj/Y-CRDT-C/releases/new
-  - drag `Y-CRDT-C.xcframework.zip` into the binaries
+  - drag `YCRDTC.xcframework.zip` into the binaries
   - update the tag to the next iteration
   - add any relevant notes
   - publish
