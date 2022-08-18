@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "Y-CRDT-C",
+    name: "YCRDTC",
     platforms: [
         .iOS(.v12),
         .macOS(.v10_10),
