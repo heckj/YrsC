@@ -16,8 +16,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "YrsC",
-            url: "https://github.com/heckj/YrsC/releases/download/0.11.2-alpha2/YrsC.xcframework.zip",
-            checksum: "6ce0f000c6f177589a2a889b1db61e90ae194f1d528fdb8bd0389034d1236a6d"
+            url: "https://github.com/heckj/YrsC/releases/download/0.15/YrsC.xcframework.zip",
+            checksum: "67dcc48e87da7e49ac1d7362adda5acb2607f8f20d93f7b4de35134f2adb5980"
         )
     ]
 )
