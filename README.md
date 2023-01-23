@@ -131,6 +131,7 @@ Generate an XCFramework:
 `6ce0f000c6f177589a2a889b1db61e90ae194f1d528fdb8bd0389034d1236a6d`
 
 - update Package.swift with the checksum and updated tag
+  - make sure the tag follows a x.y.z semantic version format!
 - commit the changes and push them up to Github
 - Create a new release through Github's web interface: https://github.com/heckj/YrsC/releases/new
   - drag `YrsC.xcframework.zip` into the binaries
