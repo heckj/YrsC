@@ -1,4 +1,10 @@
-# Swift package wrapping Y CRDT's FFI C-based interface
+# Deprecated
+
+Please check out the Y CRDT's effort to make swift accessible code
+at https://github.com/y-crdt/y-uniffi as the alternative from the
+Y-CRDT development team.
+
+## Swift package wrapping Y CRDT's FFI C-based interface
 
 Much of the setup here is inspired by the blog post about building
 C FFI interfaces from Rust and combining them to make them available
